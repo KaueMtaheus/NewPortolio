@@ -7,11 +7,23 @@
         <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
         <link rel="stylesheet" href="../arquivos/css/style.css">
         <link rel="stylesheet" href="output.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>       
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Hurricane&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <!----Icons-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
         <style>
             .bg-fundo {
             background-image: url(../src/img/fundo1.jpg);
             background-position: bottom;     
         }
+
+            body {
+                font-family: 'Poppins', sans-serif;
+            }
     </style>
 </head>
 <body>
@@ -29,14 +41,21 @@
             </nav>
         </div>
         <section>
-            <div class="justify-center text-center flex flex-col font-bold py-20 relative" style="text-shadow: 1px 1px 2px black;">
-                <h1 class="text-white text-7xl">KAUE</h1>
-                <p class="text-red-600 text-2xl absolute inset-x-0 font-normal">Desenvolvedor Web</p>
-                <h1 class="text-white text-7xl">MATHEUS</h1>
-            </div>
-            <div class="justify-center w-80 m-auto">
-                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos qui mollitia officiis atque, autem, sint excepturi voluptatibus, molestiae nobis tempore aliquam similique temporibus. Magni voluptatem nemo maxime, reiciendis odio ab.</p>
-            </div>
+            <div class="justify-center text-center flex flex-col font-bold py-12 relative m-5" style="text-shadow: 1px 1px 2px black;">
+                    <h1 class="text-white text-7xl">KAUE</h1>
+                    <p class="text-red-600 text-4xl absolute inset-24 justify-center text-center font-normal" style="font-family: 'Hurricane';">Desenvolvedor Web</p>
+                    <h1 class="text-white text-7xl">MATHEUS</h1>
+            
+                <div class="justify-center w-96 m-auto relative my-5 shadow-sm" style="background-color: #00000010; z-index: 5;">
+                    <p class="text-white font-normal p-5 text-left text-sm " style="text-shadow: 1px 1px 2px black;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos qui mollitia officiis atque, autem, sint excepturi voluptatibus, molestiae nobis tempore aliquam similique temporibus. Magni voluptatem nemo maxime, reiciendis odio ab.</p>
+                </div>
+                
+                <div class="flex flex-auto m-auto space-x-6 text-2xl">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div> 
+            </div>          
         </section>
     </main>
 
