@@ -21,9 +21,16 @@
             background-position: bottom;     
         }
 
-            body {
+            body, {
                 font-family: 'Poppins', sans-serif;
-            }
+                margin: 0;
+                padding: 0;
+                height: 100%;
+        }
+
+            main {
+            height: 100vh;
+        }   
     </style>
 </head>
 <body>
@@ -41,8 +48,8 @@
             </nav>
         </div>
         <section>
-            <div class="justify-center text-center flex flex-col font-bold py-12 relative m-5" style="text-shadow: 1px 1px 2px black;">
-                    <h1 class="text-white text-7xl">KAUE</h1>
+            <div class="justify-center text-center flex flex-col font-bold py-12 relative" style="text-shadow: 1px 1px 2px black;">
+                    <h1 class="text-white text-7xl">KAUÊ</h1>
                     <p class="text-red-600 text-4xl absolute inset-24 justify-center text-center font-normal" style="font-family: 'Hurricane';">Desenvolvedor Web</p>
                     <h1 class="text-white text-7xl">MATHEUS</h1>
             
@@ -50,12 +57,18 @@
                     <p class="text-white font-normal p-5 text-left text-sm " style="text-shadow: 1px 1px 2px black;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos qui mollitia officiis atque, autem, sint excepturi voluptatibus, molestiae nobis tempore aliquam similique temporibus. Magni voluptatem nemo maxime, reiciendis odio ab.</p>
                 </div>
                 
-                <div class="flex flex-auto m-auto space-x-6 text-2xl">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+                <div class="flex flex-auto m-auto space-x-6 text-2xl shadow-2xl" style="text-shadow: 1px 1px 1px black;">
+                    <a href="#" class="text-blue-800"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="text-black"><i class="fab fa-github"></i></a>
+                    <a href="#" class="text-pink-800"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-blue-900"><i class="fab fa-discord"></i></a>
                 </div> 
             </div>          
+        </section>
+        <section class=" bg-black h-screen m-0">
+            <div>
+                <h2 class="m-0 p-0 text-white">Habilidades</h2>
+            </div>
         </section>
     </main>
 
