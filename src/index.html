@@ -3,7 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Portfólio</title>
+        <link rel="shortcut icon" href="img/brasil.png" type="image/x-icon">
         <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
         <link rel="stylesheet" href="../arquivos/css/style.css">
         <link rel="stylesheet" href="output.css">
@@ -18,8 +19,11 @@
         <style>
             .bg-fundo {
             background-image: url(../src/img/fundo1.jpg);
-            background-position: bottom;     
+            background-position: bottom;
+            margin: 0;
+            padding: 0;     
         }
+
 
             body, {
                 font-family: 'Poppins', sans-serif;
@@ -34,16 +38,20 @@
     </style>
 </head>
 <body>
-    <main class="bg-cover bg-center bg-fundo bg-no-repeat w-full h-screen bg-scroll ">
+    <main class="bg-cover bg-center bg-fundo bg-no-repeat w-full h-screen bg-scroll">
         <div>
             <nav class="py-1">
-                <div class="container mx-auto">
+                <div class="container mx-auto items-center justify-center">
                     <ul class="flex space-x-6 justify-center text-sm" style="text-shadow: 1px 1px 2px black;">
                         <li><a href="" class="hover:text-red-600 font-semibold text-white">Inicio</a></li>
                         <li><a href="" class="hover:text-red-600 font-semibold text-white">Habilidades</a></li>
                         <li><a href="" class="hover:text-red-600 font-semibold text-white">Projetos</a></li>
                         <li><a href="" class="hover:text-red-600 font-semibold text-white">Contato</a></li>
-                    </ul>   
+                        <li class="flex space-x-1 items-center p-0 m-0 justify-end">
+                            <img src="img/brasil.png" class="w-5 h-5 cursor-pointer">
+                            <img src="img/eua.png" class="w-5    h-5 cursor-pointer">
+                        </li>  
+                    </ul>
                 </div>
             </nav>
         </div>
@@ -67,11 +75,12 @@
         </section>
         <section class=" bg-black h-screen m-0">
             <div>
-                <h2 class="m-0 p-0 text-white">Habilidades</h2>
+                <h2 class="m-0 p-0 text-white text-center">Habilidades</h2>
             </div>
         </section>
     </main>
 
     <script src="../arquivos/js/script.js"></script>
+    
 </body>
 </html>
