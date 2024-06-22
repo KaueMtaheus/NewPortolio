@@ -1,102 +1,207 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfólio</title>
-        <link rel="shortcut icon" href="img/brasil.png" type="image/x-icon">
-        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="../arquivos/css/style.css">
-        <link rel="stylesheet" href="output.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>       
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Hurricane&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        <!----Icons-->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-        <style>
-            .bg-fundo {
-            background-image: url(../src/img/fundo1.jpg);
-            background-position: bottom;
-            margin: 0;
-            padding: 0;     
-        }
+        <!DOCTYPE   html>
+        <html lang="pt-br">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Portfólio</title>
+                <link rel="shortcut icon" href="img/brasil.png" type="image/x-icon">
+                <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+                <link rel="stylesheet" href="../arquivos/css/style.css">
+                <link rel="stylesheet" href="output.css">
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>       
+                <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Hurricane&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+                <!----Icons-->
+                <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+                <!---Swiper-->
+                <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
 
-            body, {
-                font-family: 'Poppins', sans-serif;
-                margin: 0;
-                padding: 0;
-                height: 100%;
-        }
+                <style>
+                    .bg-fundo {
+                    background-image: url(../src/img/fundo1.jpg);
+                    background-position: bottom;
+                    margin: 0;
+                    padding: 0;     
+                }
 
-            main {
-            height: 100vh;
-        }   
-    </style>
-</head>
-<body>
-    <main class="bg-cover bg-center bg-fundo bg-no-repeat w-full h-screen bg-scroll">
-        <!-------Menu------>
-        <div>
-            <nav class="py-1">
-                <div class="container mx-auto items-center justify-center">
-                    <ul class="flex space-x-6 justify-center text-sm" style="text-shadow: 1px 1px 2px black;">
-                        <li><a href="" class="hover:text-red-600 font-semibold text-white">Inicio</a></li>
-                        <li><a href="" class="hover:text-red-600 font-semibold text-white">Sobre</a></li>
-                        <li><a href="" class="hover:text-red-600 font-semibold text-white">Habilidades</a></li>
-                        <li><a href="" class="hover:text-red-600 font-semibold text-white">Projetos</a></li>
-                        <li><a href="" class="hover:text-red-600 font-semibold text-white">Contato</a></li>
-                        <li class="flex space-x-1 items-center p-0 m-0 justify-end">
-                            <img src="img/brasil.png" class="w-5 h-5 cursor-pointer">
-                            <img src="img/eua.png" class="w-5 h-5 cursor-pointer">
-                        </ul>
-                    </li>  
-                </div>
-            </nav>
-        </div>
 
-        <!------home------->
-        <section>
-            <div class="justify-center text-center flex flex-col font-bold py-12 relative" style="text-shadow: 1px 1px 2px black;">
-                    <h1 class="text-white text-7xl">KAUÊ</h1>
-                    <p class="text-red-600 text-4xl absolute inset-24 justify-center text-center font-normal" style="font-family: 'Hurricane';">Desenvolvedor Web</p>
-                    <h1 class="text-white text-7xl">MATHEUS</h1>
+                    body, {
+                        font-family: 'Poppins', sans-serif;
+                        margin: 0;
+                        padding: 0;
+                        height: 100%;
+                }
+
+                    main {
+                    height: 100vh;
+                }   
+            </style>
+        </head>
+        <body>
+            <main class="bg-cover bg-center bg-fundo bg-no-repeat w-full h-screen bg-scroll">
             
-                <div class="justify-center w-96 m-auto relative my-5 shadow-sm" style="background-color: #00000010; z-index: 5;">
-                    <p class="text-white font-normal p-5 text-left text-sm " style="text-shadow: 1px 1px 2px black;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos qui mollitia officiis atque, autem, sint excepturi voluptatibus, molestiae nobis tempore aliquam similique temporibus. Magni voluptatem nemo maxime, reiciendis odio ab.</p>
+                <!-------nav------>
+                <div>
+                    <nav class="py-1">
+                        <div class="container mx-auto items-center justify-center">
+                            <ul class="flex space-x-6 justify-center text-sm" style="text-shadow: 1px 1px 2px black;">
+                                <li><a href="" class="hover:text-red-600 font-semibold text-white">Inicio</a></li>
+                                <li><a href="" class="hover:text-red-600 font-semibold text-white">Sobre</a></li>
+                                <li><a href="" class="hover:text-red-600 font-semibold text-white">Habilidades</a></li>
+                                <li><a href="" class="hover:text-red-600 font-semibold text-white">Projetos</a></li>
+                                <li><a href="" class="hover:text-red-600 font-semibold text-white">Contato</a></li>
+                                <li class="flex space-x-1 items-center p-0 m-0 justify-end">
+                                    <img src="img/brasil.png" class="w-5 h-5 cursor-pointer">
+                                    <img src="img/eua.png" class="w-5 h-5 cursor-pointer">
+                                </ul>
+                            </li>  
+                        </div>
+                    </nav>
                 </div>
+
+                <!------home------->
+                <section>
+                    <div class="justify-center text-center flex flex-col font-bold py-12 relative" style="text-shadow: 1px 1px 2px black;">
+                            <h1 class="text-white text-7xl">KAUÊ</h1>
+                            <p class="text-red-600 text-4xl absolute inset-24 justify-center text-center font-normal" style="font-family: 'Hurricane';">Desenvolvedor Web</p>
+                            <h1 class="text-white text-7xl">MATHEUS</h1>
+                    
+                        <div class="justify-center w-96 m-auto relative my-5 shadow-sm" style="background-color: #00000010; z-index: 5;">
+                            <p class="text-white font-normal p-5 text-left text-sm " style="text-shadow: 1px 1px 2px black;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos qui mollitia officiis atque, autem, sint excepturi voluptatibus, molestiae nobis tempore aliquam similique temporibus. Magni voluptatem nemo maxime, reiciendis odio ab.</p>
+                        </div>
+                        
+                        <div class="flex flex-auto m-auto space-x-6 text-2xl shadow-2xl" style="text-shadow: 1px 1px 1px black;">
+                            <a href="#" class="text-blue-800"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="text-black"><i class="fab fa-github"></i></a>
+                            <a href="#" class="text-pink-800"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-blue-900"><i class="fab fa-discord"></i></a>
+                        </div>                 
+                    </div>                      
+                </section>
+
+                <!------About-------->
+                <section class=" bg-black h-screen  m-0">
+                    <div class="m-0 p-0">
+                        <h2 class="text-red-600 text-5xl inset-24 justify-center text-center font-normal py-10" style="font-family: 'Hurricane';">About me</h2>
+                        <div class="text-white border-l-2 p-2 m-auto justify-center items-center my-32 w-3/5  ">
+                            <p class=" p-3 text-left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio necessitatibus fugit architecto itaque veniam aut vitae labore. Veniam consequatur sunt, exercitationem eligendi tenetur, voluptas ullam adipisci neque qui recusandae eaque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta aliquam ducimus itaque. Rem maxime totam labore! Beatae tempore quod impedit ducimus voluptas aliquam unde, nobis dicta asperiores minus voluptates quisquam!</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!------Skills------>   
+                <section class=" bg-gray-900 h-screen  m-0">
+                    <div class="m-0 p-0">
+                        <h2 class="text-red-600 text-5xl inset-24 justify-center text-center font-normal py-24" style="font-family: 'Hurricane';">Skills</h2>
+                        <div class="">
+                            <table>
+                                <tr>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    
+                <!------Project------>   
+                <section id="project" class="bg-black py-24">
+                    <div class="container mx-auto">
+                        <h2 class="text-red-600 text-5xl text-center font-normal mb-10" style="font-family: 'Hurricane';">Projetos</h2>
+                        <div class="swiper project-slider">
+                            <div class="swiper-wrapper">
+                                
+                                <!-- Slide 1 -->
+                                <div class="swiper-slide">
+                                    <div class="relative">
+                                        <img src="img/tranding-food-1.png" alt="Project 1" class="w-64 h-64 object-cover rounded-lg">
+                                        <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-between p-4">
+                                            <h1 class="text-white text-xl">$20</h1>
+                                            <div>
+                                                <h2 class="text-white text-2xl">Special Pizza</h2>
+                                                <h3 class="text-white flex items-center mt-2">
+                                                    <span>4.5</span>
+                                                    <div class="ml-2 flex">
+                                                        <ion-icon name="star" class="text-yellow-500"></ion-icon>
+                                                        <ion-icon name="star" class="text-yellow-500"></ion-icon>
+                                                        <ion-icon name="star" class="text-yellow-500"></ion-icon>
+                                                        <ion-icon name="star" class="text-yellow-500"></ion-icon>
+                                                        <ion-icon name="star" class="text-yellow-500"></ion-icon>
+                                                    </div>  
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Slide 2 -->
+                                <div class="swiper-slide">
+                                    <div class="relative">
+                                        <img src="img/tranding-food-2.png" alt="Project 2" class="w-64 h-64 object-cover rounded-lg">
+                                        <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-between p-4">
+                                            <h1 class="text-white text-xl">$20</h1>
+                                            <div>
+                                                <h2 class="text-white text-2xl">Special Pizza</h2>
+                                                <h3 class="text-white flex items-center mt-2">
+                                                    <span>4.5</span>
+                                                    <div class="ml-2 flex">
+                                                        <ion-icon name="star" class="text-yellow-500"></ion-icon>
+                                                        <ion-icon name="star" class="text-yellow-500"></ion-icon>
+                                                        <ion-icon name="star" class="text-yellow-500"></ion-icon>
+                                                        <ion-icon name="star" class="text-yellow-500"></ion-icon>
+                                                        <ion-icon name="star" class="text-yellow-500"></ion-icon>
+                                                    </div>
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Slide 3 -->
+
+                                <div class="swiper-slide">
+                                    <div class="relative">
+                                        <img src="img/tranding-food-3.png" alt="Project 3" class="w-64 h-64 object-cover rounded-lg">
+                                        <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-between p-4">
+                                            <h1 class="text-white text-xl">$20</h1>
+                                            <div>
+                                                <h2 class="text-white text-2xl">Special Pizza</h2>
+                                                <h3 class="text-white flex items-center mt-2">
+                                                    <span>4.5</span>
+                                                    <div class="ml-2 flex">
+                                                        <ion-icon name="star" class="text-yellow-500"></ion-icon>
+                                                        <ion-icon name="star" class="text-yellow-500"></ion-icon>
+                                                        <ion-icon name="star" class="text-yellow-500"></ion-icon>
+                                                        <ion-icon name="star" class="text-yellow-500"></ion-icon>
+                                                        <ion-icon name="star" class="text-yellow-500"></ion-icon>
+                                                    </div>
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>    
+
+
+                                <!-- Repeat similar blocks for other slides -->
+                            </div>
                 
-                <div class="flex flex-auto m-auto space-x-6 text-2xl shadow-2xl" style="text-shadow: 1px 1px 1px black;">
-                    <a href="#" class="text-blue-800"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" class="text-black"><i class="fab fa-github"></i></a>
-                    <a href="#" class="text-pink-800"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="text-blue-900"><i class="fab fa-discord"></i></a>
-                </div>                 
-            </div>                      
-        </section>
-
-        <!------About-------->
-        <section class=" bg-black h-screen  m-0">
-            <div class="m-0 p-0">
-                <h2 class="text-red-600 text-5xl inset-24 justify-center text-center font-normal py-2" style="font-family: 'Hurricane';">Sobre</h2>
-                <div class="text-white border-l-2 p-2 m-auto justify-center items-center my-32 w-3/5 p-0 space-x-0">
-                    <p class=" p-3 text-left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio necessitatibus fugit architecto itaque veniam aut vitae labore. Veniam consequatur sunt, exercitationem eligendi tenetur, voluptas ullam adipisci neque qui recusandae eaque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta aliquam ducimus itaque. Rem maxime totam labore! Beatae tempore quod impedit ducimus voluptas aliquam unde, nobis dicta asperiores minus voluptates quisquam!</p>
-                </div>
-            </div>
-        </section>
-
-        <!------Skills------>
-        <section>
-            <div>
-
-            </div>
-        </section>
-    </main>
-
-    <script src="../arquivos/js/script.js"></script>
-    
-</body>
-</html>
+                            <!-- Navigation controls -->
+                            <div class="swiper-button-prev text-white"></div>
+                            <div class="swiper-button-next text-white"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </section>
+                            
+            </main>
+            <script src="../arquivos/js/script.js"></script>
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>    
+        </body>
+        </html>
