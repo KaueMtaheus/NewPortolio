@@ -1,4 +1,5 @@
-var swiper = new Swiper('.project-slider', {
+document.addEventListener('DOMContentLoaded', function () {
+  var swiper = new Swiper('.project-slider', {
     effect: 'coverflow',
     grabCursor: true,
     centeredSlides: true,
@@ -19,3 +20,9 @@ var swiper = new Swiper('.project-slider', {
       prevEl: '.swiper-button-prev',
     },
   });
+});
+
+
+var copy = document.querySelector(".logos-slide").cloneNode(true);
+document.querySelector(".logos").appendChild(copy);
+

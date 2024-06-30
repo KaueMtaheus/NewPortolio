@@ -19,27 +19,95 @@
 
                 <!---Swiper-->
                 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-
-
-                <style>
-                    .bg-fundo {
+              
+              <style>
+                .bg-fundo {
                     background-image: url(../src/img/fundo1.jpg);
                     background-position: bottom;
                     margin: 0;
                     padding: 0;     
+
                 }
 
-
-                    body, {
+                body, {
                         font-family: 'Poppins', sans-serif;
                         margin: 0;
                         padding: 0;
                         height: 100%;
                 }
 
-                    main {
+                
+                main {
                     height: 100vh;
-                }   
+                }
+                
+                
+                .swiper-slide {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .swiper-slide img {
+                    display: block;
+                    margin: auto;
+                }
+
+                .logos {
+                    display: flex;
+                    overflow: hidden;
+                    padding:  60px 0;
+                    position: relative;
+                    width: 100%;
+                    padding: 20px;
+                }
+
+                .logos-slide {
+                    display: flex;
+                    animation: slide 6s linear infinite;
+                }
+
+                .logos-slide img {
+                    height: 100px;
+                    margin: 0 50px;
+                }
+
+                @keyframes slide {
+                    0% {
+                        transform: translateX(0);
+                    }
+                    100% {
+                        transform: translateX(-100%);
+                    }
+                }
+
+                .logos:before,
+                .logos:after {
+                    position: absolute;
+                    top: 0;
+                    width: 250px;
+                    height: 100vh;
+                    content: "";
+                    z-index: 2;
+                }
+
+                .logos:before {
+                    left: 0;
+                    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+                }
+
+                .logos:after {
+                    right: 0;
+                    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+                }
+
+                .logos:hover .logos-slide {
+                    animation-play-state: paused;
+                }
+                                            
+
+
+                                                
             </style>
         </head>
         <body>
@@ -85,57 +153,56 @@
                 </section>
 
                 <!------About-------->
-                <section class=" bg-black h-screen  m-0">
-                    <div class="m-0 p-0">
-                        <h2 class="text-red-600 text-5xl inset-24 justify-center text-center font-normal py-10" style="font-family: 'Hurricane';">About me</h2>
-                        <div class="text-white border-l-2 p-2 m-auto justify-center items-center my-32 w-3/5  ">
+                <section class=" bg-black h-auto p-10">
+                    <div class="m-0">
+                        <h2 class="text-red-600 text-5xl inset-24 justify-center text-center font-normal" style="font-family: 'Hurricane';">About me</h2>
+                        <div class="text-white border-l-2 p-2 m-auto justify-center items-center my-32 w-3/5">
                             <p class=" p-3 text-left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio necessitatibus fugit architecto itaque veniam aut vitae labore. Veniam consequatur sunt, exercitationem eligendi tenetur, voluptas ullam adipisci neque qui recusandae eaque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta aliquam ducimus itaque. Rem maxime totam labore! Beatae tempore quod impedit ducimus voluptas aliquam unde, nobis dicta asperiores minus voluptates quisquam!</p>
                         </div>
                     </div>
                 </section>
 
                 <!------Skills------>   
-                <section class=" bg-gray-900 h-screen  m-0">
-                    <div class="m-0 p-0">
-                        <h2 class="text-red-600 text-5xl inset-24 justify-center text-center font-normal py-24" style="font-family: 'Hurricane';">Skills</h2>
-                        <div class="">
-                            <table>
-                                <tr>
-                                    <th></th>
-                                    <th></th>
-                                    <th></th>
-                                    <th></th>
-                                </tr>
-                            </table>
+                <section class="bg-gray-200">
+                        <div class="logos overflow-hidden py-16 bg-white whitespace-nowrap">
+                          <div class="logos-slide inline-block animate-slide"> 
+                            <img src="img/html-5.png" class="h-12 mx-10" />
+                            <img src="/src/img/css-3.png" class="h-12 mx-10" />
+                            <img src="img/java-script.png" class="h-12 mx-10" />
+                            <img src="img/development.png" class="h-12 mx-10" />
+                            <img src="img/figma.png" class="h-12 mx-10" />
+                            <img src="img/programing.png" class="h-12 mx-10" />
+                            <img src="img/react.png" class="h-12 mx-10" />
+                            <img src="img/react.png" class="h-12 mx-10" />
+                          </div>
                         </div>
-                    </div>
+                </section>
 
                     
                 <!------Project------>   
                 <section id="project" class="bg-black py-24">
-                    <div class="container mx-auto">
-                        <h2 class="text-red-600 text-5xl text-center font-normal mb-10" style="font-family: 'Hurricane';">Projetos</h2>
+                    <div class="container m-auto">
+                        <h2 class="text-red-600 text-5xl text-center font-normal mb-12" style="font-family: 'Hurricane';">Projetos</h2>
                         <div class="swiper project-slider">
                             <div class="swiper-wrapper">
-                                
+                            
                                 <!-- Slide 1 -->
                                 <div class="swiper-slide">
                                     <div class="relative">
-                                        <img src="img/tranding-food-1.png" alt="Project 1" class="w-64 h-64 object-cover rounded-lg">
+                                        <img src="img/tranding-food-1.png" alt="Project 1" class="w-64 h-64 object-cover rounded-lg ">
                                         <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-between p-4">
                                             <h1 class="text-white text-xl">$20</h1>
                                             <div>
                                                 <h2 class="text-white text-2xl">Special Pizza</h2>
-                                                <h3 class="text-white flex items-center mt-2">
-                                                    <span>4.5</span>
-                                                    <div class="ml-2 flex">
-                                                        <ion-icon name="star" class="text-yellow-500"></ion-icon>
-                                                        <ion-icon name="star" class="text-yellow-500"></ion-icon>
-                                                        <ion-icon name="star" class="text-yellow-500"></ion-icon>
-                                                        <ion-icon name="star" class="text-yellow-500"></ion-icon>
-                                                        <ion-icon name="star" class="text-yellow-500"></ion-icon>
-                                                    </div>  
-                                                </h3>
+                                                <h3 class="text-white flex items-center mt-2"></h3>
+                                                <span>4.5</span>
+                                                <div class="ml-2 flex">
+                                                    <ion-icon name="star" class="text-yellow-500"></ion-icon>
+                                                    <ion-icon name="star" class="text-yellow-500"></ion-icon>
+                                                    <ion-icon name="star" class="text-yellow-500"></ion-icon>
+                                                    <ion-icon name="star" class="text-yellow-500"></ion-icon>
+                                                    <ion-icon name="star" class="text-yellow-500"></ion-icon>
+                                                </div>  
                                             </div>
                                         </div>
                                     </div>
@@ -165,7 +232,6 @@
                                 </div>
 
                                 <!-- Slide 3 -->
-
                                 <div class="swiper-slide">
                                     <div class="relative">
                                         <img src="img/tranding-food-3.png" alt="Project 3" class="w-64 h-64 object-cover rounded-lg">
@@ -187,10 +253,9 @@
                                         </div>
                                     </div>
                                 </div>    
-
-
-                                <!-- Repeat similar blocks for other slides -->
                             </div>
+
+                            
                 
                             <!-- Navigation controls -->
                             <div class="swiper-button-prev text-white"></div>
@@ -201,7 +266,7 @@
                 </section>
                             
             </main>
-            <script src="../arquivos/js/script.js"></script>
+            <script src="./js/script.js"></script>
             <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>    
         </body>
         </html>
