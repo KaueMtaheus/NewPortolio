@@ -105,9 +105,36 @@
                     animation-play-state: paused;
                     
                 }
-                                            
 
-
+                .animated-border {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    border: 2px solid;
+                    box-sizing: border-box;
+                    pointer-events: none;
+                    animation: move-border 4s linear infinite;
+                }
+                                
+                @keyframes move-border {
+                    0% {
+                        clip-path: polygon(0 0, 100% 0, 100% 3%, 0 3%);
+                    }
+                    25% {
+                        clip-path: polygon(97% 0, 100% 0, 100% 100%, 97% 100%);
+                    }
+                    50% {
+                        clip-path: polygon(0 97%, 100% 97%, 100% 100%, 0 100%);
+                    }
+                    75% {
+                        clip-path: polygon(0 0, 3% 0, 3% 100%, 0 100%);
+                    }
+                    100% {
+                        clip-path: polygon(0 0, 100% 0, 100% 3%, 0 3%);
+                    }
+                }
                                                 
             </style>
         </head>
@@ -136,7 +163,7 @@
                 <section>
                     <div class="justify-center text-center flex flex-col font-bold py-12 relative" style="text-shadow: 1px 1px 2px black;">
                             <h1 class="text-white text-7xl">KAUÊ</h1>
-                            <p class="text-red-600 text-4xl absolute inset-24 justify-center text-center font-normal" style="font-family: 'Hurricane';">Desenvolvedor Web</p>
+                            <p class="text-red-600 bg-y text-5xl absolute inset-24 justify-center text-center font-normal" style="font-family: 'Hurricane'">Desenvolvedor Web</p>
                             <h1 class="text-white text-7xl">MATHEUS</h1>
                     
                         <div class="justify-center w-96 m-auto relative my-5 shadow-sm" style="background-color: #00000010; z-index: 5;">
@@ -186,14 +213,17 @@
                 <!------Project------>   
                 <section id="project" class="bg-black py-24">
                     <div class="container m-auto">
-                        <h2 class="text-red-600 text-5xl text-center font-normal mb-12" style="font-family: 'Hurricane';">Projetos</h2>
+                        <div class="animation m-auto items-center justify-center flex mb-10 relative">
+                            <p class="text-yellow-500 font-semibold text-2xl text-center m-auto absolute mt-40 p-2 flex" id="development">USANDO A CRIATIVIDADE <img src="/src/img/wired-lineal-742-code.apng" class="w-10 flex"></p>
+                            <h2 class="text-red-600 opacity-25 font-semibold text-9xl text-center mb-10 mt-32 m-auto" style="">PROJETOS</h2>
+                        </div>
                         <div class="swiper project-slider">
                             <div class="swiper-wrapper">
                             
                                 <!-- Slide 1 -->
                                 <div class="swiper-slide">
                                     <div class="relative">
-                                        <img src="img/tranding-food-1.png" alt="Project 1" class="w-64 h-64 object-cover rounded-lg ">
+                                        <img src="img/tranding-food-1.png" alt="Project 1" class="w-72 h-72 object-cover rounded-lg ">
                                         <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-between p-4">
                                             <h1 class="text-white text-xl">$20</h1>
                                             <div>
@@ -215,7 +245,7 @@
                                 <!-- Slide 2 -->
                                 <div class="swiper-slide">
                                     <div class="relative">
-                                        <img src="img/tranding-food-2.png" alt="Project 2" class="w-64 h-64 object-cover rounded-lg">
+                                        <img src="img/tranding-food-2.png" alt="Project 2" class="w-72 h-72 object-cover rounded-lg">
                                         <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-between p-4">
                                             <h1 class="text-white text-xl">$20</h1>
                                             <div>
@@ -238,7 +268,7 @@
                                 <!-- Slide 3 -->
                                 <div class="swiper-slide">
                                     <div class="relative">
-                                        <img src="img/tranding-food-3.png" alt="Project 3" class="w-64 h-64 object-cover rounded-lg">
+                                        <img src="img/tranding-food-3.png" alt="Project 3" class="w-72 h-72 object-cover rounded-lg">
                                         <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-between p-4">
                                             <h1 class="text-white text-xl">$20</h1>
                                             <div>
